@@ -21,7 +21,7 @@ php -S 127.0.0.1:8000
 
 2. Open http://localhost:8000/ in any browser. 
 
-<img src="screenshots/index-page.png" width="500" />
+<img src="screenshots/index-page.png" />
 
 Here in landing page configurated rules will be listed. To update these rule please edit <a herf="slot-config.php">slot-config.php</a>.
 
