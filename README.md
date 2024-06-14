@@ -1,37 +1,50 @@
 # Working Hours Calculation in Different Slabs
 
-## Prerequsite
-- **Install PHP**
+This project facilitates the calculation of working hours based on configurable slabs using PHP. It involves configuring salary percentages for different time ranges, uploading timesheet data, and generating outputs in CSV format.
 
-## Configure
-1. Slab Configuration: Here update salary percentage for a timerange. Regular is the weekly breakups for entire month. Specific is for date specific breaks for special dates like holidays. These slabs will be listed in landing page.
+## Prerequisite
 
-<img src="screenshots/config.png" width="500" />
+Ensure PHP is installed on your system. You can install PHP from [php.net](https://www.php.net/manual/en/install.php).
 
-2. Upload Timesheet CSV: List of start time and end time of employees.
+## Configuration
 
-<img src="screenshots/upload_timesheet.png" width="500" />
+### 1. Slab Configuration
 
-## Execute
-1. Run project in php
+Configure salary percentages for different time ranges:
+- **Regular**: Weekly breakdowns for the entire month.
+- **Specific**: Date-specific breaks, such as holidays. These slabs are listed on the landing page.
 
-```
-php -S 127.0.0.1:8000
-```
+<img src="screenshots/config.png" width="450" />
 
-2. Open http://localhost:8000/ in any browser. 
+### 2. Upload Timesheet CSV
 
-<img src="screenshots/index-page.png" />
+Upload a CSV file containing start and end times of employees' working hours.
 
-Here in landing page configurated rules will be listed. To update these rule please edit <a herf="slot-config.php">slot-config.php</a>.
+<img src="screenshots/upload_timesheet.png" width="450" />
 
-3. Upload updated timesheet
+## Execution
 
-<img src="screenshots/upload_timesheet.png" width="500" />
+1. Run the PHP project using the built-in web server:
 
+   ```bash
+   php -S 127.0.0.1:8000
+   ```
 
-# Output
-A CSV will be downloaded with working hours calculated in different slabs.
+2. Open [http://localhost:8000/](http://localhost:8000/) in any web browser.
 
-<img src="screenshots/output.png" width="300" />
+<img src="screenshots/index-page.png" width="450" />
+
+The landing page displays the configured rules. To update these rules, edit `slot-config.php`.
+
+3. Upload Updated Timesheet
+
+Upload the updated timesheet CSV file for processing.
+
+<img src="screenshots/upload_timesheet.png" width="450" />
+
+## Output
+
+Upon processing, a CSV file will be downloaded automatically, containing the calculated working hours based on the configured slabs.
+
+<img src="screenshots/output.png" width="450" />
 
